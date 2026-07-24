@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas Loves Dogs 🐶</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Flying dogs container -->
+  <div id="flying-dogs"></div>
+
+  <!-- HOME PAGE -->
+  <section id="home" class="page active">
+    <div class="hero">
+      <div class="hero-emoji">🐶</div>
+      <h1>Thomas Loves Dogs</h1>
+      <p class="tagline">A celebration of the world's most wholesome creatures 🐾</p>
+      <button class="btn" onclick="goToOptIn()">Join the Dog Fan Club 🐾</button>
+    </div>
+
+    <div class="dog-grid">
+      <div class="dog-card">🦴 Fetch Master</div>
+      <div class="dog-card">🐕 Good Boy</div>
+      <div class="dog-card">🐾 Paw Prints</div>
+      <div class="dog-card">💛 Best Friend</div>
+      <div class="dog-card">🎾 Ball Chaser</div>
+      <div class="dog-card">🛁 Bath Hater</div>
+    </div>
+  </section>
+
+  <!-- OPT-IN PAGE -->
+  <section id="optin" class="page">
+    <div class="optin-box">
+      <div class="optin-emoji">🐕‍🦺</div>
+      <h2>Join the Pack!</h2>
+      <p>Sign up and get a daily dose of dog happiness delivered to your inbox 🐶💌</p>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <button type="submit" class="btn">Yes, I love dogs! 🐾</button>
+      </form>
+      <a href="#" onclick="goHome()" class="back-link">← Back to Home</a>
+    </div>
+  </section>
+
+  <!-- SUCCESS PAGE -->
+  <section id="success" class="page">
+    <div class="success-box">
+      <div class="success-emoji">🎉</div>
+      <h2>You're in the pack!</h2>
+      <p>Welcome to the Dog Fan Club. Expect lots of tail wags in your inbox! 🐶💛</p>
+      <button class="btn" onclick="goHome()">Back to Home 🏠</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made with ❤️ by <strong>Thomas</strong> &amp; Slack</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
